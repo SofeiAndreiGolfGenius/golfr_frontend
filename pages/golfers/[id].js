@@ -1,7 +1,7 @@
-import useUserInfo from '../../lib/useUserInfo';
-import ScoreCard from '../../components/ScoreCard';
-import { useRouter } from 'next/dist/client/router';
-import Layout from '../../components/Layout';
+import useUserInfo from '../../lib/useUserInfo'
+import ScoreCard from '../../components/ScoreCard'
+import { useRouter } from 'next/dist/client/router'
+import Layout from '../../components/Layout'
 const User = () => {
   const route = useRouter()
   const golferId = route.query.id
