@@ -11,7 +11,7 @@ const User = () => {
       <>
         {error1 ? (
           error1
-        ) :
+          ) :
           (error2 ? (
             error2
           ) :
