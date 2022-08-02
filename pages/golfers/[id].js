@@ -5,7 +5,6 @@ import Layout from "../../components/Layout";
 const User = () => {
   const route = useRouter()
   const golferId = route.query.id
-  console.log("Golfer id", golferId)
   const { name, scores, error1, error2 } = useUserInfo(golferId)
   return(
     <Layout>
