@@ -12,23 +12,22 @@ const User = () => {
         {error1 ? (
           error1
         ) : (error2 ? (
-              error2
-            ) : (
-              <>
-                <div>{ name }</div>
-                {scores && scores.map(score => (
-                  <ScoreCard
-                    key={score.id}
-                    id={score.id}
-                    totalScore={score.total_score}
-                    playedAt={score.played_at}
-                    userId={score.user_id}
-                    userName={name}
-                  />
-                ))}
-              </>
-            )
-          )}
+          error2
+        ) : (
+          <>
+            <div>{ name }</div>
+            {scores && scores.map(score => (
+              <ScoreCard
+                key={score.id}
+                id={score.id}
+                totalScore={score.total_score}
+                playedAt={score.played_at}
+                userId={score.user_id}
+                userName={name}
+              />
+            ))}
+          </>
+        ))}
       </>
     </Layout>
   )
